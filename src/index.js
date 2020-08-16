@@ -1,5 +1,5 @@
 import "./styles.css";
-import Game from "/src/game";
+import Game from "/src/game.js";
 
 let canvas = document.getElementById("gameScreen");
 let ctx = canvas.getContext("2d");
