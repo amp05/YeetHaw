@@ -1,5 +1,5 @@
-import Player from "/src/player";
-import Input from "/src/input";
+import Player from "/src/player.js";
+import Input from "/src/input.js";
 
 const GAMESTATE = {
   PAUSED: 0,
