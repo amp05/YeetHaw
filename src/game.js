@@ -40,6 +40,7 @@ export default class Game {
       this.imageArray[Math.floor(Math.random() * 3 + 1)]
     );
     this.gameObjects = [this.player, this.enemy];
+    this.curLevel = 0;
     
     this.start();
   }
@@ -74,7 +75,6 @@ export default class Game {
     }
     if (!this.player.alive) {
       this.gameState = GAMESTATE.GAMEOVER;
-      this.curLevel = 0;
     }
     this.gameObjects.forEach((obj) => obj.update(deltaTime));
     this.input.levelInputs = this.levelInputs;
