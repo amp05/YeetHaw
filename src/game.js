@@ -74,6 +74,7 @@ export default class Game {
     }
     if (!this.player.alive) {
       this.gameState = GAMESTATE.GAMEOVER;
+      this.curLevel = 0;
     }
     this.gameObjects.forEach((obj) => obj.update(deltaTime));
     this.input.levelInputs = this.levelInputs;
